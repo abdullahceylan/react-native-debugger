@@ -13,9 +13,15 @@
   "dependencies": {
     "adbkit": "^2.11.0",
     "electron-store": "^1.2.0",
-    "react-devtools-core": "^2.5.2"
+    "react-devtools-core": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "optionalDependencies": {
     "electron-named-image": "^1.0.4"
-  }
+  },
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
